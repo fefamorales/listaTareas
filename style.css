@@ -1,0 +1,110 @@
+
+            body,html{
+                
+                font-family: 'Roboto', sans-serif;
+                background: #fff url(img/bg-body.png) no-repeat top center;
+
+            }
+          
+            #container{
+                width: 500px;
+                margin: auto;
+                box-shadow: 0px 5px 5px #ccc;
+                background:#fff;
+                opacity: 0.7;
+                filter: alpha(opacity=70); /* For IE8 and earlier */                
+                float: right;
+
+            }
+
+            header{
+                padding: 20px;
+                height: 200px;
+                padding: 60px 10px 10px 10px;
+                background: url(img/bg-header.png) no-repeat top center;
+                background-position: cover;
+            }
+
+            header h3{
+                text-align: center;
+                color: #000;
+                font-family: 'Kaushan Script', cursive;
+                font-size: 40px;
+                line-height:5px;
+
+            }
+            header h4{
+                text-align: center;
+                line-height:2px;
+
+            }
+
+            input{
+                width: 91.2%;
+                padding: 20px;
+               
+            }
+            input #box{
+                font-style: italic;
+            }
+
+
+            #add{
+                padding: 15px 0px;
+                width: 100%;
+                border:1px solid #ccc;
+                background: #2c77ed;
+                margin: 0;
+                color:#fff;
+            }
+
+            ol{
+                margin:0;
+                border:1px solid #ccc;
+                min-height: 400px;
+                padding: 10px;
+                background: #f8f8f8;
+            }
+            ol li{
+                list-style: none;
+                border:1px solid #ccc;
+                padding: 20px;
+                background: #fff;
+                margin-bottom: 10px;
+                position: relative;
+
+            }
+
+            ol li span{
+
+                font-family: 'Roboto', sans-serif;
+                font-size: 12px;
+                font-weight: lighter;
+                color:#666;
+            }
+
+            ol li .btn-delete{
+                position: absolute;
+                right: 0;
+                top:8px;
+                margin-right: 10px;
+                border:none;
+                background: #d5185f;
+                color: #fff;
+                border-radius: 5px;
+                padding: 10px 15px;
+            }
+
+            .footer{
+                margin:20px 0;
+            }
+
+
+            .footer h5{
+                text-align: center;
+            }
+
+           /* ul .estado li{
+                float: left;
+
+            }*/
