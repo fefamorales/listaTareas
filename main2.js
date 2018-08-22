@@ -21,6 +21,16 @@ function addTarea(tarea){
         renderList(response);
     })
 }
+
+function removeTarea(tarea){
+    fetch('http://localhost:5000/delete/' +  tarea, {
+        method: 'DELETE'
+    }).then(res => res.json())
+    .catch(error => console.error('Error:', error))
+    .then(response => { 
+        //renderList(response);
+    })
+}
 // aqui va la funcion que renderiza la lista de tareas
 function renderList(tareas){
     // seteo la lista del html (armo el html)
@@ -41,8 +51,9 @@ function renderList(tareas){
         btn.classList.add('btn-delete');
 
         btn.addEventListener('click', function(){
+            removeTarea(item['_id']);
             tareas.splice(tareas.indexOf(item),1);
-            renderList();
+            renderList(tareas);
         })
         li.appendChild(btn);
         li.appendChild(text);
@@ -65,4 +76,6 @@ document.addEventListener('DOMContentLoaded',function(){
         renderList(response);
     })
 })
+
+
 

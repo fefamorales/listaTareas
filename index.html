@@ -6,7 +6,23 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Roboto" rel="stylesheet">
+        <script>
+//random de imagenes en el background
+$(document).ready(function(){
+    var images=[
+        'img/bg-body.png',
+        'img/bg-body2.png',
+        'img/bg-body3.png',
+        'img/bg-body4.png',
+    ];
 
+var randomNumber = Math.floor(Math.random() * images.lenght);
+var bdImg = 'url(' + img[randomNumber] + ')';
+$('body').css({'background':bgImg, 'background-size':'cover', });
+});
+
+
+         </script>
         <title>ToDo List-Brasil 2018</title>
 
         
@@ -23,6 +39,7 @@
         </section>
         <section>
             <ol id="lista"></ol>
+
         </section>
         <section class="footer">
             <h5>examen final....juegue!</h5>
@@ -31,6 +48,7 @@
        <script src="index.js"></script>
        <!--script src="main.js"></script-->
        <script src="main2.js"></script>
+      
     </section>
     </body>
 </html>

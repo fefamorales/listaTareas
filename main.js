@@ -8,3 +8,7 @@ function add(a){
 console.log(miArray);
 add(8);
 console.log(miArray);
+
+
+
+
